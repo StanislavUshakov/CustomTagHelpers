@@ -23,7 +23,7 @@ namespace CustomTagHelpersAndViewComponents.TagHelpers
             }
 
             var content = await output.GetChildContentAsync();
-            string copyright = $"<p>&copy; {DateTime.Now.Year} {content.GetContent()}";
+            string copyright = $"<p>&copy; {DateTime.Now.Year} {content.GetContent()}</p>";
             output.Content.SetHtmlContent(copyright);
         }
     }
